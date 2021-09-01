@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.biaoti{
+    margin: 40px 0;
+    text-align: center;
+}
+.navbar-btn{
+    color: #60C992;
+    font-size: 12px;
+    padding: 6px 25px;
+}
+.navbar-btn:hover{
+    background: #60C992;
+    color: white;
+}
+.btn-default{
+    border-color: #60C992;
+}
+.nav{
+    text-align: center;
+}  
+.icon-bar{
+    transition: all 1s;
+}
+/* ----------------------------------------------- */
+section{
+    background: #F2F2F2;
+}
+.swiper1{
+    width: 100%;
+    height: 760px;
+    padding: 0 0; 
+    margin-top: 79px; 
+    position: relative; 
+    font-size: 20px; 
+    color: white; 
+}
+.banner .bottom{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+}
+.banner .top{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+}
+.banner .slide1{
+    background: url(img/about-us-banner-1.jpg) no-repeat center;
+    background-size: cover;
+}
+.banner .slide2{
+    background: url(img/about-us-banner-2.jpg) no-repeat center;
+    background-size: cover;
+}
+.prebtn,.nexbtn{
+    height: 80px;
+    width: 30px;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.prebtn{
+    left: 0;
+}
+.nexbtn{
+    right: 0;
+}
+.swiper1:hover .prebtn{
+    display: block;
+}
+.swiper1:hover .nexbtn{
+    display: block;
+}
+
+.yiliao p,.tuandui p{
+    margin: 5px 0;
+    text-align: center;
+}
+.yiliao_box{
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.yl_box1{
+    width: 30%;
+    background: #60C992;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    color: white;
+}
+.yl_box1 p,.yl_box1 img{
+    padding: 15px 0;
+    text-align: center;
+}
+.tuandui{
+   width: 100%;
+}
+.td_box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.td_1{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.td_1 .zhezhao{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(255, 255, 255, 0);
+    display: flex;
+    justify-content: center;
+    transition: all 1s;
+    opacity: 0;
+}
+.td_1 .zhezhao:hover{
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.8);
+}
+.td_1 .zhezhao div{
+    width: 80%;
+    height: 80%;
+    border: #60C992 5px solid;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.td_1 img{
+    width: 90%;
+}
+.fuwu{
+    width: 100%;
+}
+.swiper2 .swiper-slide{
+    display: flex;
+}
+.swiper2 .swiper-slide img{
+    width: 75%;
+    height: 100%;
+}
+.swiper2 .swiper-slide div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    background: #60C992;
+    color: white;
+}
+.swiper2 .swiper-slide div p{
+    padding: 2px 10px;
+    text-align: center;
+}
+.huai{
+    text-align: center;    
+}
+.yuanjing{
+    width: 100%;
+    height: 420px;
+    background: url(img/about-yuanjing.jpg) no-repeat center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* .yuanjing img{
+    margin-top: 0%;
+} */
+.yuanjiang p{
+    margin:10% auto;
+    text-align: center;
+}
+footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 100px;
+    background: black;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:768px) {
+    .nav li{
+        border-bottom: #ccc 1px solid;
+    } 
+    .swiper1{
+        height: 300px;
+        font-size: 11px;
+        margin-top: 50px;
+    }
+    .banner .slide1{
+        background: url(img/aboutus-banner1-2x-small.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .banner .slide2{
+        background: url(img/aboutus-banner2-2x-small.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .yiliao_box .yl_box1{
+        width: 90%;
+    }
+    .td_box .td_1{
+        width: 100%;
+    }
+    .td_box .td_1 img{
+        width: 100%;
+    } 
+    .swiper2 .swiper-slide{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .swiper2 .swiper-slide img{
+        width: 100%;
+    } 
+}

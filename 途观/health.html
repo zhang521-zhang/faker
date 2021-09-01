@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="health.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/swiper.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        *{margin: 0;padding: 0;}
+      
+        @media only screen and (min-width:768px){
+            .navbar-brand .logos{
+                display: none;
+            }
+            .navbar-nav li:nth-of-type(5){
+                display: none;
+            }
+            .slide2 ul li h1{
+                font-size: 20px;
+            }
+            .slide2 ul{
+                position: absolute;
+                left: 45%;  
+            }
+            .confirst .dou{
+                width: 17%;
+                margin-left: 40%;
+            }
+            .confirst{
+                margin-bottom: 40px;
+            }
+        }
+        @media only screen and (min-width:992px){
+            .slide2 ul li h1{
+                font-size: 36px;
+            }
+            .slide2 ul{
+                position: absolute;
+                left: 45%;
+            }
+            .confirst .dou{
+                width: 25%;
+                margin-left: 40%;
+            }
+        }
+        @media only screen and (min-width:1200px){
+            .slide2 ul li h1{
+                font-size: 36px;
+            }
+            .confirst .dou{
+                width: 30%;
+            }
+        }
+        @media only screen and (max-width:768px){
+            .navbar-brand img:nth-of-type(1){
+                display: none;
+            }
+            .navbar-default{
+                height: 51px;
+            }
+            .navbar-brand{
+                width: 50px;
+                height: 51px;
+            }
+            .navbar-brand .logos{
+                width: 30px;
+                height: 30px;
+                margin-top: 10px;
+            }
+            .navbar-collapse{
+                background: #f0f0f0;
+                height: 237px;
+            }
+            .navbar-nav li{
+                border-bottom: 2px solid #ccc;
+                text-align: center;
+            }
+            .navbar .btn.btn-default{
+                display: none;
+            }
+
+            .imgbox{
+                display: none;
+            }
+            .imgboxa{
+                display: block;
+            }
+            .slide2 ul{
+                display: none; 
+            }
+            .slide2 .a{
+                position: absolute;
+                left: 1.5%;
+            }
+
+            .confirst .dou{
+                width: 12%;
+                margin-left: 42%;
+            }
+            .confirst{
+                margin-bottom: 50px;
+            }
+
+            footer{
+                height: 50px;
+            }
+            footer .container{
+                padding-top: 3px;
+            }
+            footer .footleft .brand{
+                text-align: center;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#col">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">
+                      <img src="img/logo.png" alt="">
+                      <img src="img/logoS.png" alt="" class="logos">
+                  </a>
+                </div>
+                <div class="collapse navbar-collapse navbar-right" id="col">
+                  <ul class="nav navbar-nav">
+                    <li><a href="index.html">关于我们</a></li>
+                    <li  class="on"><a href="health.html">途观健康</a></li>
+                    <li><a href="value.html">价值聚焦</a></li>
+                    <li><a href="content.html">联系我们</a></li>
+                    <li><a href="#">下载途观健康</a></li>
+                  </ul>
+                  <div class="btn btn-default">下载途观健康</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="imgbox">
+        <div class="imgtxt">
+            <div class="first">
+                <div class="text1 texta">人生旅途 欢 悦同行</div>
+                <div class="text2 textb">To Health To Happiness</div>
+            </div>
+            <div class="second">
+                <div class="text1 texta">人生旅途 欢 悦同行</div>
+                <div class="text2 textb">To Health To Happiness</div>
+            </div>
+        </div>
+        
+        <div class="an prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </div>
+        <div class="an next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </div>
+    </div>
+    <div class="imgboxa">
+        <div class="firsta">
+            <div class="text1 texta">人生旅途 欢 悦同行</div>
+            <div class="text2 textb">To Health To Happiness</div>
+        </div>
+        <div class="seconda">
+            <div class="text1 texta">人生旅途 欢 悦同行</div>
+            <div class="text2 textb">To Health To Happiness</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="healthy">
+            <h3>以专业维护您的健康</h3>
+            <div class="line"></div>
+            <p>途观希冀于用专业的力量温情传递健康的意义，用医学的理念与技术帮助大众更科学的维护健康</p>
+            <div class="swiper-container swiper1">
+                <div class="swiper-wrapper wrapper1">
+                    <div class="swiper-slide slide1">
+                        <img src="img/garden01.jpg" alt="" class="garden">
+                    </div>
+                    <div class="swiper-slide slide1">
+                        <img src="img/garden02.jpg" alt="" class="garden">
+                    </div>
+                    <div class="swiper-slide slide1">
+                        <img src="img/garden03.jpg" alt="" class="active garden">
+                    </div>
+                    <div class="swiper-slide slide1">
+                        <img src="img/garden04.jpg" alt="" class="garden">
+                    </div>
+                    <div class="swiper-slide slide1">
+                        <img src="img/garden05.jpg" alt="" class="garden">
+                    </div>
+                </div>
+                <div class="swiper-button-prev">
+                    <img src="img/left.jpg" alt="" class="prev">
+                </div>
+                <div class="swiper-button-next">
+                    <img src="img/right.jpg" alt="" class="next">
+                </div>
+            </div>
+        </div>
+        <div class="tijian">
+            <p>途观健康，协同三甲医院医生，依据您的近期体检报告及日常情况</p>
+            <p>面对面评估您的健康状况及风险，制定健康（诊疗）计划</p>
+            <div class="line"></div>
+            <p>既往，只体检，体检结果无人管</p>
+            <div class="row">
+                <img src="img/tuhuan1_l2x.jpg" alt="" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">    
+                <img src="img/tuhuan1_r2x.jpg" alt="" class="col-lg-6 col-md-6  col-sm-6 col-xs-6">
+            </div>
+            <img src="img/zljh-logo-icon.png" alt="" class="green1">
+        </div>
+        <div class="jilu">
+            <p>途观健康，专业、系统、持续的记录您的健康</p>
+            <p>包含历史体检数据、历史诊疗与日常监控随访数据等，成为您就诊时，医生诊疗决策最有力协助</p>
+            <div class="line"></div>
+            <p>记录随手丢，病例找不到，医嘱记不住</p>
+            <div class="row">
+                <img src="img/tuhuan3_l2x.jpg" alt="" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">    
+                <img src="img/tuhuan4_r2x.jpg" alt="" class="col-lg-6 col-md-6  col-sm-6 col-xs-6">
+            </div>
+            <img src="img/hzsj-logo-icon.png" alt="" class="green1">
+        </div>
+        <div class="focus">
+            <p>专业临床医学背景的途观医生助理仿佛您的家人，时刻关注着您的健康</p>
+            <p>通过主动持续的干预与管理，为您提供个体化的健康服务</p>
+            <div class="line"></div>
+            <p>对健康关注，却因缺少专业知识而束手无策</p>
+            <div class="row">
+                <img src="img/tuhuan5_l2x.jpg" alt="" class="col-lg-6 col-md-6 col-sm-6 col-xs-6">    
+                <img src="img/tuhuan6_r2x.jpg" alt="" class="col-lg-6 col-md-6  col-sm-6 col-xs-6">
+            </div>
+            <img src="img/hzgl-logo-icon.png" alt="" class="green1">
+        </div>
+        <div class="service">
+            <h3>科技助力医疗创新,实现更高协同价值</h3>
+            <div class="line"></div>
+            <p>在途观医疗健康管理平台的支持下</p>
+            <p>以社区医院家庭医生及途观个人专属健康顾问为中心，集合三甲医院顶尖专家、权威专科医生的“责任医疗团队”</p>
+            <p>共同为您和家人提供高度协同的主动管理式医疗健康服务：日常健康管理，健康风险评估与风险因素管理，医疗服务连接等</p>
+            <div class="ser">
+                <img src="img/fuwutixi-11.jpg" alt="">
+                <img src="img/fuwutixi-2.jpg" alt="">
+                <div class="circle">
+                    <span>服务体系</span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="tiyan">
+            <h3>以您为中心,更便捷的健康体验</h3>
+            <div class="line"></div>
+            <div class="row">
+                <div class="tu1 col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <img src="img/center-img-01.jpg" alt="">
+                    <h5>更了解您</h5>
+                    <div class="line"></div>
+                    <p>为您建立的个人电子健康档案，全面记录您的日常健康数据、医疗记录，是医生更精准诊疗的基础</p>
+                </div>
+                <div class="tu1 col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <img src="img/center-img-02.jpg" alt="">
+                    <h5>时刻关注您</h5>
+                    <div class="line"></div>
+                    <p>将人工智能运用于健康数据的智能检测，持续、动态的管理您的健康数据，更早发现潜在健康风险</p>
+                </div>
+                <div class="tu1 col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <img src="img/center-img-03.jpg" alt="">
+                    <h5>离您更近</h5>
+                    <div class="line"></div>
+                    <p>与熟悉您健康的途观大夫、家庭医生、专属健康顾问进行在线咨询，随时随地获得更便捷的健康服务</p>
+                </div>
+                <div class="tu1 col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <img src="img/center-img-04.jpg" alt="">
+                    <h5>家人般守护您</h5>
+                    <div class="line"></div>
+                    <p>健康顾问与家庭医生为您预判并连接您所适需医疗方案，帮助您获得更精准、更有效率的医疗服务</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="changemore">
+        <img src="img/phone.png" alt="" class="phone">
+        <div class="swiper-container swiper2">
+            <div class="swiper-wrapper wrapper2">
+                <div class="swiper-slide slide2">
+                    <img src="img/a1.jpg" alt="" class="a">
+                    <ul>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"><h1>随时随地</h1></li>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s"><h1>咨询您的专属健康顾问</h1></li>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.9s"><div class="line"></div></li>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s"><p>具有丰富临床医学经验的途观医生助理团队，为您提供在线的健康咨询服务、与您进行及时的沟通</p></li>
+                    </ul>
+                </div>
+                <div class="swiper-slide slide2">
+                    <img src="img/a2.jpg" alt="" class="a">
+                    <ul>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"><h1>随时随地</h1></li>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s"><h1>咨询您的专属健康顾问</h1></li>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.9s"><div class="line"></div></li>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s"><p>具有丰富临床医学经验的途观医生助理团队，为您提供在线的健康咨询服务、与您进行及时的沟通</p></li>
+                    </ul>
+                </div>
+                <div class="swiper-slide slide2">
+                    <img src="img/a3.jpg" alt="" class="a">
+                    <ul>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"><h1>随时随地</h1></li>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s"><h1>咨询您的专属健康顾问</h1></li>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.9s"><div class="line"></div></li>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s"><p>具有丰富临床医学经验的途观医生助理团队，为您提供在线的健康咨询服务、与您进行及时的沟通</p></li>
+                    </ul>
+                </div>
+                <div class="swiper-slide slide2">
+                    <img src="img/a4.jpg" alt="" class="a">
+                    <ul>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"><h1>随时随地</h1></li>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s"><h1>咨询您的专属健康顾问</h1></li>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.9s"><div class="line"></div></li>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s"><p>具有丰富临床医学经验的途观医生助理团队，为您提供在线的健康咨询服务、与您进行及时的沟通</p></li>
+                    </ul>
+                </div>
+                <div class="swiper-slide slide2">
+                    <img src="img/a5.jpg" alt="" class="a">
+                    <ul>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"><h1>随时随地</h1></li>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.6s"><h1>咨询您的专属健康顾问</h1></li>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.9s"><div class="line"></div></li>
+                        <li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="1.2s"><p>具有丰富临床医学经验的途观医生助理团队，为您提供在线的健康咨询服务、与您进行及时的沟通</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="conage">
+            <h3>用户的鼓励</h3>
+            <div class="line"></div>
+            <p class="conp">途观健康、协同于现有的医疗服务体系，致力于构建更精准的医疗保健模式</p>
+            <div class="row">
+                <div class="confirst col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <img src="img/xiong1.jpg" alt="" class="xiong">
+                    <p class="xiongtext">我长期坐办公室，吃油炸食品，在途观进行综合健康评估时，发现已有糖尿病前期症状，在医生助理的指导下，我在调节饮食和运动中逐</p>
+                    <img src="img/yhgl-icon.svg" alt="" class="dou col-lg-3 col-md-3">
+                </div>
+                <div class="confirst col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <img src="img/xiong2.jpg" alt="" class="xiong">
+                    <p class="xiongtext">我长期坐办公室，吃油炸食品，在途观进行综合健康评估时，发现已有糖尿病前期症状，在医生助理的指导下，我在调节饮食和运动中逐</p>
+                    <img src="img/yhgl-icon.svg" alt="" class="dou col-lg-3 col-md-3">
+                </div>
+                <div class="confirst col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <img src="img/xiong3.jpg" alt="" class="xiong">
+                    <p class="xiongtext">我长期坐办公室，吃油炸食品，在途观进行综合健康评估时，发现已有糖尿病前期症状，在医生助理的指导下，我在调节饮食和运动中逐</p>
+                    <img src="img/yhgl-icon.svg" alt="" class="dou col-lg-3 col-md-3">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fulid">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="footleft col-lg-9 col-md-9 col-sm-9">
+                        <div class="foot hidden-xs">
+                            <a href="#">公司动态</a>
+                            <a href="#">加入我们</a>
+                            <a href="#">企业用户</a>
+                            <a href="#">用户使用协议</a>
+                        </div>
+                        <div class="brand">  
+                            Copyright © 2017 途观医疗健康科技有限公司 蜀ICP备15025302号-1
+                        </div>
+                    </div>
+                    <div class="footright col-lg-3 col-md-3 col-sm-3 hidden-xs">
+                        <img src="img/wewix-ico.svg" alt="">
+                        <img src="img/shouji-logo-icon.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        var flag=true;
+        $('.navbar-toggle.collapsed').click(function(){
+            if(flag){
+                $('span:nth-of-type(1)').css({transform:"rotate(45deg) translateY(3px) translateX(7px)",transition:"all 1s"})
+                $('span:nth-of-type(2)').css({opacity:"0",transition:"all 1s"})
+                $('span:nth-of-type(3)').css({transform:"rotate(-45deg) translateY(-3px) translateX(7px)",transition:"all 1s"})
+                flag=!flag
+            }else{
+                $('span:nth-of-type(1)').css({transform:"rotate(0deg)"})
+                $('span:nth-of-type(2)').css({opacity:"1"})
+                $('span:nth-of-type(3)').css({transform:"rotate(0deg)"})
+                flag=!flag
+            }
+        })
+        
+        var mySwiper = new Swiper ('.swiper1', {
+            onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+                swiperAnimateCache(swiper); //隐藏动画元素 
+                swiperAnimate(swiper); //初始化完成开始动画
+            }, 
+                onSlideChangeEnd: function(swiper){ 
+                swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+            } ,
+
+            onSlideChangeStart: function(swiper){
+                $(".slide1 .garden").css({width:"135px",height:"135px"})
+                $(".slide1 .garden").eq(swiper.activeIndex).css({width:"270px",height:"270px"})
+            },
+            slidesPerView:5,
+            loop:true,
+            autoplay:2000,
+            centeredSlides : true,
+            initialSlide :2,
+            observer: true,
+            speed:2000,
+            prevButton:'.swiper-button-prev',
+            nextButton:'.swiper-button-next',
+        })
+        var mySwiper2=new Swiper('.swiper2',{
+            onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+                swiperAnimateCache(swiper); //隐藏动画元素 
+                swiperAnimate(swiper); //初始化完成开始动画
+            }, 
+                onSlideChangeEnd: function(swiper){ 
+                swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+            } ,
+            autoplay: 1000,//可选选项，自动滑动
+            speed:1000,
+            slidesPerView : 5,
+            loop:true,
+            spaceBetween : 1,
+            centeredSlides:true,
+            initialSlide: 2,
+        })
+        function star(){
+            var wid=$(document).width()
+            console.log(wid)
+            if(wid<992){
+                mySwiper.params.slidesPerView=1;    
+            }
+            else if(wid>1200){
+                mySwiper.params.slidesPerView=5;         
+            }
+            else{
+                mySwiper.params.slidesPerView=3;
+            }
+            mySwiper.update();
+            mySwiper.reLoop();
+            mySwiper.onResize();
+            mySwiper.slideNext();
+        }
+        window.onresize=function(){star();}
+        window.onload=function(){ star();}
+    </script>
+</body>
+</html>

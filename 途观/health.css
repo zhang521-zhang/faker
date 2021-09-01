@@ -1,0 +1,497 @@
+body{
+    background-color: #f2f2f2;
+}
+.navbar-default{
+    height: 79px;
+}
+.navbar-default .navbar-brand{
+    margin: 0;
+    padding: 0 0 0 15px;
+}
+.nav.navbar-nav{
+    margin-top: 17px;
+}
+.navbar-nav .on{
+    border-bottom: 1px solid #3bbe7a;
+}
+.navbar-collapse .btn{
+    width: 134px;
+    height: 32px;
+    border: 1px solid #3bbe7a;
+    color: #3bbe7a;
+    margin-top: 25px;
+}
+.navbar-collapse .btn:hover{
+    background: #3bbe7a;
+    color: #fff;
+}
+.navbar-default .navbar-toggle span.icon-bar{
+    background-color: #3bbe7a;
+    height: 1px;
+    margin-bottom: 6px;
+}
+.navbar-default .navbar-toggle .icon-bar:nth-of-type(3){
+    margin-bottom: 0;
+}
+
+.imgbox{
+    width: 100%;
+    height: 760px;
+    padding-top: 15px;
+    position: relative;
+}
+.imgbox .first{
+    width: 100%;
+    height: 760px;
+    padding-top: 15px;
+    opacity: 0;
+    position: absolute;
+    background: url(img/health-banner2.jpg) no-repeat center;
+    background-size: cover;
+    animation: changeb 9s infinite;
+}
+.imgbox .second{
+    width: 100%;
+    height: 760px;
+    padding-top: 15px;
+    position: absolute;
+    background: url(img/health-banner1.jpg) no-repeat center;
+    background-size: cover;
+    animation: changea 9s infinite;
+}
+@keyframes changea {
+    0%{opacity: 1;}
+    40%{opacity: 1;}
+    50%{opacity: 0;}
+    90%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes changeb {
+    0%{opacity: 0;}
+    40%{opacity: 0;}
+    50%{opacity: 1;}
+    90%{opacity: 1;}
+    100%{opacity: 0;}
+}
+.imgbox .an{
+    width: 25px;
+    height: 80px;
+    background: black;
+    opacity: 0.5;
+    position: absolute;
+    display: none;
+}
+.imgbox .prev{
+    left: 0;
+    top: 55%;
+    color: #fff;
+    font-size: 20px;
+}
+.imgbox .next{
+    right: 0;
+    top: 55%;
+    color: #fff;
+    font-size: 20px;
+}
+.imgbox div span{
+    margin-top: 30px;
+}
+
+.imgbox .text1{
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    right: 15%;
+    top: 40%;
+    animation: movedown 4.1s infinite;
+}
+.imgbox .text2{
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    right: 19%;
+    top: 55%;
+    animation: moveup 4.1s infinite;
+}
+@keyframes movedown{
+    0%{transform: translateY(-50px);opacity: 0;}
+    100%{transform: translateY(0);opacity: 1;}
+}
+@keyframes moveup{
+    from{transform: translateY(50px);opacity: 0;}
+    to{transform: translateY(0);opacity: 1;}
+}
+
+
+.imgboxa{
+    width: 100%;
+    height: 300px;
+    padding-top: 15px;
+    position: relative;
+    display: none;
+}
+.imgboxa .firsta{
+    width: 100%;
+    height: 300px;
+    padding-top: 15px;
+    opacity: 0;
+    position: absolute;
+    background: url(img/health-banner2.jpg) no-repeat center;
+    background-size: cover;
+    animation: changeb 4s infinite;
+}
+.imgboxa .seconda{
+    width: 100%;
+    height: 300px;
+    padding-top: 15px;
+    position: absolute;
+    background: url(img/health-banner1.jpg) no-repeat center;
+    background-size: cover;
+    animation: changea 4s infinite;
+}
+@keyframes changea {
+    0%{opacity: 1;}
+    40%{opacity: 1;}
+    50%{opacity: 0;}
+    90%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes changeb {
+    0%{opacity: 0;}
+    40%{opacity: 0;}
+    50%{opacity: 1;}
+    90%{opacity: 1;}
+    100%{opacity: 0;}
+}
+.imgboxa .text1{
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    right: 15%;
+    top: 40%;
+    animation: movedown 2s infinite;
+}
+.imgboxa .text2{
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    right: 19%;
+    top: 55%;
+    animation: moveup 2s infinite;
+}
+@keyframes movedown{
+    0%{transform: translateY(-50px);opacity: 0;}
+    25%{}
+    75%{}
+    100%{transform: translateY(0);opacity: 1;}
+}
+@keyframes moveup{
+    from{transform: translateY(50px);opacity: 0;}
+    25%{}
+    75%{}
+    to{transform: translateY(0);opacity: 1;}
+}
+
+.healthy h3{
+    padding-top: 5px;
+    text-align: center;
+}
+.healthy .line{
+    width: 50px;
+    height: 1px;
+    background: #3bbe7a;
+    margin: 30px auto 50px auto;
+}
+.healthy p{
+    text-align: center;
+}
+.swiper1{
+    width: 100%;
+    height: 320px;
+    background: #f2f2f2;
+    position: relative;
+}
+.swiper1 .slide1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper1 .slide1 .garden{
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.swiper1 .swiper-button-prev{
+    position: absolute;
+    left: 0;
+    top: 80%;
+}
+.swiper1 .swiper-button-next{
+    position: absolute;
+    right: 0;
+    top: 80%;
+}
+.tijian .line{
+    width: 50px;
+    height: 1px;
+    background: #3bbe7a;
+    margin: 30px auto 50px auto;
+}
+.tijian p:nth-of-type(1){
+    height: 30px;
+    margin: 60px auto 10px;
+    text-align: center;
+}
+.tijian p{
+    height: 30px;
+    text-align: center;
+}
+
+.tijian{
+    position: relative;
+}
+.tijian .col-lg-6{
+    width: 50%;
+    height: 100%;
+    padding: 0;
+}
+.tijian .green1{
+    width: 8%;
+    height: 18%;
+    position: absolute;
+    left: 46%;
+    top: 60%;
+}
+.jilu .line{
+    width: 50px;
+    height: 1px;
+    background: #3bbe7a;
+    margin: 30px auto 50px auto;
+}
+.jilu p:nth-of-type(1){
+    height: 30px;
+    margin: 60px auto 10px;
+    text-align: center;
+}
+.jilu p{
+    height: 30px;
+    text-align: center;
+}
+.jilu{
+    position: relative;
+}
+.jilu .col-lg-6{
+    width: 50%;
+    height: 100%;
+    padding: 0;
+}
+.jilu .green1{
+    width: 8%;
+    height: 18%;
+    position: absolute;
+    left: 46%;
+    top: 60%;
+}
+.focus .line{
+    width: 50px;
+    height: 1px;
+    background: #3bbe7a;
+    margin: 30px auto 50px auto;
+}
+.focus p:nth-of-type(1){
+    height: 30px;
+    margin: 60px auto 10px;
+    text-align: center;
+}
+.focus p{
+    height: 30px;
+    text-align: center;
+}
+.focus{
+    position: relative;
+}
+.focus .col-lg-6{
+    width: 50%;
+    height: 100%;
+    padding: 0;
+}
+.focus .green1{
+    width: 8%;
+    height: 18%;
+    position: absolute;
+    left: 46%;
+    top: 60%;
+}
+.service h3{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+.service .line{
+    width: 50px;
+    height: 1px;
+    background: #3bbe7a;
+    margin: 30px auto 50px auto;
+}
+.service p{
+    height: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.service .ser img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.service .ser{
+    position: relative;
+}
+.service .circle{
+    width: 130px;
+    height: 130px;
+    background: #3bbe7a;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    line-height: 130px;
+    font-size: 25px;
+}
+.tiyan h3{
+    margin: 20px 0 10px;
+    text-align: center;
+}
+.tiyan .line{
+    width: 40px;
+    height: 1px;
+    background: #3bbe7a;
+    margin: 20px auto 20px auto;
+}
+.tiyan .row .tu1 img{
+    width: 100%;
+    height: 50%;
+}
+.tiyan .row .tu1 h5{
+    text-align: center;
+    margin: 20px 0 10px;
+}
+.tiyan .row .tu1 p{
+    text-align: center;
+}
+.changemore{
+    width: 100%;
+    height: 660px;
+    background: url(img/shoujibei_icon.jpg) no-repeat;
+    position: relative;
+}
+.changemore .phone{
+    height: 80%;
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+}
+.swiper2{
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    left: 0%;
+    bottom: -30%;
+}
+.slide2 .a{
+    width: 264px;
+    height: 460px;
+    position: absolute;
+    left: 1%;
+    bottom: 0%;
+    margin-right: 30px;
+}
+.slide2 ul{
+    width: 50%;
+    position: absolute;
+    left: 35%;
+    bottom: 55%;
+}
+.slide2 ul .line{
+    width: 20%;
+    height: 1px;
+    background: #3bbe7a;
+    margin: 20px 0;
+}
+.slide2 ul li{
+    list-style: none;
+    color: #fff;
+}
+.slide2 ul li p{
+    font-size: 15px;
+}
+
+
+.conage h3{
+    padding-top: 5px;
+    text-align: center;
+}
+.conage .line{
+    width: 50px;
+    height: 1px;
+    background: #3bbe7a;
+    margin: 30px auto 50px auto;
+}
+.conage .conp{
+    text-align: center;
+}
+.confirst{
+    height: 150px;
+    position: relative;
+    margin-top: 20px;
+}
+.confirst .xiong{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 45%;
+    top: -15%;
+}
+.confirst .xiongtext{
+    border: 1px solid #333;
+    border-radius: 5%;
+    font-size: 16px;
+    padding: 45px 5px 20px;
+}
+.confirst .dou{
+    width: 30%;
+    margin-left: 23%;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background: #0F0F0F;
+    margin-top: 50px;
+}
+footer .container{
+    padding-top: 20px;
+}
+footer .footleft .foot a{
+    color: #fff;
+    padding: 0 10px;
+    border-right: 1px solid #fff;
+}
+footer .footleft .foot a:nth-of-type(4){
+    border-right: none;
+}
+footer .footleft .brand{
+    color: #fff;
+    font-size: 10px;
+    margin-top: 10px;
+}
+footer .footright img{
+    width: 15%;
+    height: 15%;
+    margin-top: 10px;
+}
